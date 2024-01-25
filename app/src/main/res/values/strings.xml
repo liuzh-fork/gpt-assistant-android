@@ -8,7 +8,7 @@
         <item>gpt-4-32k</item>
     </string-array>
     <!-- HMS语音识别API_KEY 已限制包名和签名 -->
-    <string name="hms_api_key" translatable="false">DAEDADuGjMLeSU+tLR7t9Z3XEtc5TH45ztgfk9MyzlFy5ogpHIYiX1wL0fWyL9tS/Y7MzU9QK4vtZUvoo97OT4YcpG9BmxtgtQpWpw==</string>
+    <string name="hms_api_key" translatable="false">DAEDAOQfcbiXxHhLM+ld64onwE1/FRQdmosEcLK0hpY9a1cemuCm5vYWD+F/8dPllWp4PFHgU8w2yaBfW/VJrMUg4LoUaerULjlEyw==</string>
     <!--  帮助说明  -->
     <string name="help_msg">
         Brief instructions below, see project homepage for more.\n\n
@@ -89,7 +89,7 @@
     <string name="text_visiting_web_prefix">"Visiting: "</string>
     <string name="text_cancel_web">Webpage visit canceled.</string>
     <string name="text_asr_error_prefix">"Voice recognition error: "</string>
-    <string name="text_input_hint">Long-press to speak or clear</string>
+    <string name="text_input_hint">Long-press to clear</string>
     <string name="text_listening_hint">Listening...</string>
     <string name="text_access_notice">Please enable Accessibility Services</string>
     <string name="toast_access_error">Accessibility not enabled, volume key control unavailable</string>

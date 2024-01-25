@@ -79,7 +79,7 @@
     <string name="text_visiting_web_prefix">"正在访问: "</string>
     <string name="text_cancel_web">已取消访问网页。</string>
     <string name="text_asr_error_prefix">"语音识别出错: "</string>
-    <string name="text_input_hint">长按输入语音或清除文本</string>
+    <string name="text_input_hint">长按清除文本</string>
     <string name="text_listening_hint">正在聆听...</string>
     <string name="text_access_notice">请前往开启无障碍服务</string>
     <string name="toast_access_error">无障碍服务未开启，无法使用音量键控制</string>

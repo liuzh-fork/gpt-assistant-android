@@ -195,7 +195,7 @@ Users can refer to the [official documentation for Baidu Speech Recognition](htt
 
 If the "Enable long speech" option is turned off, the program uses the Baidu short speech recognition interface. If enabled, it uses the real-time speech recognition interface, and users need to select the corresponding service when creating the application based on their needs.
 
-Additionally, when creating the application, set the "Voice Package Name" to "Android" and fill in the software package name `com.skythinker.gptassistant`.
+Additionally, when creating the application, set the "Voice Package Name" to "Android" and fill in the software package name `io.mybatis.gptassistant`.
 
 ![Set Voice Package Name](readme_img/asr_set_package.jpg)
 

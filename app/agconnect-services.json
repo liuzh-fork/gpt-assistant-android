@@ -20,34 +20,37 @@
 		"SG_back":"connect-ws-dra.hispace.dbankcloud.com"
 	},
 	"client":{
-		"cp_id":"70086000187586270",
-		"product_id":"388421841221708581",
-		"project_id":"388421841221708581",
-		"app_id":"109326889",
-		"package_name":"com.skythinker.gptassistant"
+		"cp_id":"30086000733120329",
+		"product_id":"388421841221936479",
+		"client_id":"1341486036991108800",
+		"client_secret":"776049CED58525D825E5A79369DC4146063508DA89962973043788383A4BF007",
+		"project_id":"388421841221936479",
+		"app_id":"110179067",
+		"api_key":"DAEDAOQfcbiXxHhLM+ld64onwE1/FRQdmosEcLK0hpY9a1cemuCm5vYWD+F/8dPllWp4PFHgU8w2yaBfW/VJrMUg4LoUaerULjlEyw==",
+		"package_name":"io.mybatis.gptassistant"
 	},
 	"oauth_client":{
-		"client_id":"109326889",
+		"client_id":"110179067",
 		"client_type":1
 	},
 	"app_info":{
-		"app_id":"109326889",
-		"package_name":"com.skythinker.gptassistant"
+		"app_id":"110179067",
+		"package_name":"io.mybatis.gptassistant"
 	},
 	"configuration_version":"3.0",
 	"appInfos":[
 		{
-			"package_name":"com.skythinker.gptassistant",
+			"package_name":"io.mybatis.gptassistant",
 			"client":{
-				"app_id":"109326889"
+				"app_id":"110179067"
 			},
 			"app_info":{
-				"package_name":"com.skythinker.gptassistant",
-				"app_id":"109326889"
+				"package_name":"io.mybatis.gptassistant",
+				"app_id":"110179067"
 			},
 			"oauth_client":{
 				"client_type":1,
-				"client_id":"109326889"
+				"client_id":"110179067"
 			}
 		}
 	]

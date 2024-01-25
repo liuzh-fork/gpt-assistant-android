@@ -196,7 +196,7 @@
 
 若设置项的“启用长语音”选项关闭，则使用的是百度短语音识别接口，若开启，则使用的是实时语音识别接口，需要用户根据需求在创建应用时勾选对应的服务
 
-此外，在创建应用时，需要将“语音包名”设置为“Android”，并填入本软件包名`com.skythinker.gptassistant`
+此外，在创建应用时，需要将“语音包名”设置为“Android”，并填入本软件包名`io.mybatis.gptassistant`
 
 ![设置语音包名](readme_img/asr_set_package.jpg)
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="io.mybatis.gptassistant.MainActivity">
 
     <LinearLayout
         android:id="@+id/ll_main_base"
@@ -228,6 +228,15 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingHorizontal="5dp">
+
+                        <ImageButton
+                            android:id="@+id/bt_voice"
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:background="#00FFFFFF"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/switch_voice" />
 
                         <ImageButton
                             android:id="@+id/bt_image"
