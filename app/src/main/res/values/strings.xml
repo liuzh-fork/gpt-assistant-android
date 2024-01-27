@@ -89,7 +89,7 @@
     <string name="text_visiting_web_prefix">"Visiting: "</string>
     <string name="text_cancel_web">Webpage visit canceled.</string>
     <string name="text_asr_error_prefix">"Voice recognition error: "</string>
-    <string name="text_input_hint">Long-press to clear</string>
+    <string name="text_input_hint">Input</string>
     <string name="text_listening_hint">Listening...</string>
     <string name="text_access_notice">Please enable Accessibility Services</string>
     <string name="toast_access_error">Accessibility not enabled, volume key control unavailable</string>

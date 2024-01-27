@@ -100,7 +100,7 @@ public class MainActivity extends Activity {
     private EditText etUserInput;
     private ImageButton btSend, btImage, btVoice;
     private ScrollView svChatArea;
-    private LinearLayout llChatList;
+    private LinearLayout llChatList, llInputArea;
     private Handler handler = new Handler();
     private Markwon markwon;
     private long asrStartTime = 0;
@@ -220,6 +220,7 @@ public class MainActivity extends Activity {
         btVoice = findViewById(R.id.bt_voice);
         svChatArea = findViewById(R.id.sv_chat_list);
         llChatList = findViewById(R.id.ll_chat_list);
+        llInputArea = findViewById(R.id.ll_input_area);
 
         // 处理启动Intent
         Intent activityIntent = getIntent();
@@ -479,12 +480,7 @@ public class MainActivity extends Activity {
             Intent broadcastIntent = new Intent("io.mybatis.gptassistant.KEY_SPEECH_START");
             LocalBroadcastManager.getInstance(this).sendBroadcast(broadcastIntent);
             view.setTag("recording");
-            return true;
-        });
-
-        // 长按输入框开始录音或清空内容
-        etUserInput.setOnLongClickListener(view -> {
-            etUserInput.setText("");
+            llInputArea.setBackgroundColor(Color.parseColor("#6f00FF00"));
             return true;
         });
 
@@ -494,6 +490,8 @@ public class MainActivity extends Activity {
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+                //横向确认，纵向取消
+                boolean isOK = (2 * Math.abs(moveX - downX) > Math.abs(moveY - downY)) || moveY > 0;
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         downX = event.getX();
@@ -502,14 +500,19 @@ public class MainActivity extends Activity {
                     case MotionEvent.ACTION_MOVE:
                         moveX = event.getX();
                         moveY = event.getY();
+                        Log.i("MOVE", String.format("X: %s, Y: %s", moveX, moveY));
+                        if(isOK) {
+                            llInputArea.setBackgroundColor(Color.parseColor("#6f00FF00"));
+                        } else {
+                            llInputArea.setBackgroundColor(Color.parseColor("#2fFF0000"));
+                        }
                         break;
                     case MotionEvent.ACTION_UP:
-                        //横向确认，纵向取消
-                        boolean isOK = Math.abs(moveX - downX) > Math.abs(moveY - downY);
                         if ("recording".equals(v.getTag())) {
                             Intent broadcastIntent = new Intent("io.mybatis.gptassistant.KEY_SPEECH_STOP");
                             LocalBroadcastManager.getInstance(MainActivity.this).sendBroadcast(broadcastIntent);
                             v.setTag(null);
+                            llInputArea.setBackgroundColor(Color.parseColor("#00FFFFFF"));
                             if (isOK) {
                                 if (chatApiClient.isStreaming()) {
                                     chatApiClient.stop();

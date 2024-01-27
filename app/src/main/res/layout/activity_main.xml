@@ -224,15 +224,17 @@
                     app:contentPadding="0dp">
 
                     <LinearLayout
+                        android:id="@+id/ll_input_area"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:background="#00FFFFFF"
                         android:paddingHorizontal="5dp">
 
                         <ImageButton
                             android:id="@+id/bt_voice"
-                            android:layout_width="35dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_weight="0"
                             android:background="#00FFFFFF"
                             android:scaleType="fitCenter"
@@ -240,8 +242,8 @@
 
                         <ImageButton
                             android:id="@+id/bt_image"
-                            android:layout_width="35dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_weight="0"
                             android:background="#00FFFFFF"
                             android:scaleType="fitCenter"
@@ -269,7 +271,7 @@
                 <ImageButton
                     android:id="@+id/bt_send"
                     android:layout_width="60dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="60dp"
                     android:layout_weight="0"
                     android:background="#00FFFFFF"
                     android:scaleType="centerInside"
